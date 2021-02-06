@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import shakeReducer from '../AppReducer';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    shake: shakeReducer,
   },
 });

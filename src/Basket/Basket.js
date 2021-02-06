@@ -11,7 +11,7 @@ const Basket = (props) => {
         <div className="basket-container">
             <BasketIcon size="100" />
             <div style={{display: isFinalized ? "block" : "none"}}>
-            {apples.map((apple, index) => <AppleIcon size="24" />)}
+            {apples.map((apple, index) => <AppleIcon key={index} size="24" />)}
             </div>
             
         </div>
